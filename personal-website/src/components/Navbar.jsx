@@ -11,7 +11,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div className="nav-brand">Portfolio</div>
+        <div className="nav-brand">
+          <span className="brand-name">Leon Berkemeier</span>
+          <span className="brand-subtitle">Developer & Data Analyst</span>
+        </div>
         <ul className="nav-links">
           <li><button onClick={() => scrollToSection('about')}>About</button></li>
           <li><button onClick={() => scrollToSection('skills')}>Skills</button></li>
