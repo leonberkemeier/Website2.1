@@ -1,11 +1,35 @@
-/* Dark mode - dark background */
+/* Dark mode - dark background with fade to next section */
 [data-theme="dark"] .about-section {
   background: linear-gradient(135deg, var(--dark-bg-start) 0%, var(--dark-bg-end) 100%);
 }
 
-/* Light mode - light purple background */
+[data-theme="dark"] .about-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  background: linear-gradient(180deg, transparent 0%, rgba(76, 81, 191, 0.25) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Light mode - light purple background with fade to next section */
 [data-theme="light"] .about-section {
   background: linear-gradient(135deg, var(--purple-bg-start) 0%, var(--purple-bg-end) 100%);
+}
+
+[data-theme="light"] .about-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.35) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .about-section {

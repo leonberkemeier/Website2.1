@@ -8,6 +8,10 @@
   background: linear-gradient(180deg, var(--skills-purple-start) 0%, var(--skills-purple-end) 100%);
 }
 
+[data-theme="dark"] .skills-section::before {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.4) 0%, transparent 100%);
+}
+
 .skills-section {
   position: relative;
   overflow: hidden;
