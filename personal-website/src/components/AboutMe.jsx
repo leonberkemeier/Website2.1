@@ -2,10 +2,10 @@ import './AboutMe.css'
 
 function AboutMe() {
   const interests = [
-    { icon: '🎨', text: 'UI/UX Design' },
-    { icon: '🤖', text: 'AI & Machine Learning' },
-    { icon: '📊', text: 'Data Visualization' },
-    { icon: '☁️', text: 'Cloud Computing' }
+    { icon: '💻', text: 'Software Engineering' },
+    { icon: '🤖', text: 'Machine Learning' },
+    { icon: '📊', text: 'Business Data Analytics' },
+    { icon: '🧪', text: 'Chemistry & Science' }
   ]
 
   return (
@@ -18,15 +18,12 @@ function AboutMe() {
             </div>
           </div>
           <div className="bio">
-            <h3>Full Stack Developer & Data Analyst</h3>
+            <h3>Developer & Data Analyst</h3>
             <p className="intro-text">
-              Passionate software developer with expertise in building modern web applications 
-              and analyzing complex data sets. I specialize in creating efficient, scalable 
-              solutions that bridge the gap between technical excellence and user experience.
+              Hi, I'm Leon, a Developer & Data Analyst with a foundation in science.
             </p>
             <p>
-              With a strong foundation in both frontend and backend technologies, I thrive 
-              on solving challenging problems and continuously learning new technologies.
+              Leveraging a B.S. in Chemistry, I am currently pursuing a second Bachelor's in Business IT to merge analytical rigor with technical development. My core focus areas include Software Engineering, Machine Learning (ML), and Coding. I am specializing in Business Data Analytics to build efficient, data-driven solutions that translate complex insights into business value. I'm passionate about developing software and leveraging data to solve real-world problems.
             </p>
 
             <div className="interests-section">
