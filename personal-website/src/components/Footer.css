@@ -1,10 +1,19 @@
+[data-theme="dark"] .footer {
+  background: linear-gradient(135deg, var(--dark-bg-start) 0%, var(--dark-bg-end) 100%);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .footer {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  color: #64748b;
+}
+
 .footer {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  color: rgba(255, 255, 255, 0.9);
   padding: 4rem 0 2rem;
   margin-top: 0;
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .footer::before {
@@ -38,17 +47,31 @@
   z-index: 1;
 }
 
+[data-theme="dark"] .footer-content {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] .footer-content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .footer-section h4 {
+  color: white;
+}
+
+[data-theme="light"] .footer-section h4 {
+  color: #1e293b;
 }
 
 .footer-section h4 {
-  color: white;
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
@@ -56,18 +79,39 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .footer-section p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .footer-section p {
+  color: #64748b;
 }
 
 .footer-section p {
-  color: rgba(255, 255, 255, 0.7);
   line-height: 1.8;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 
 .social-links {
   display: flex;
   gap: 1rem;
+}
+
+[data-theme="dark"] .social-links a {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .social-links a {
+  background: rgba(99, 102, 241, 0.05);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  color: #64748b;
 }
 
 .social-links a {
@@ -76,11 +120,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.7);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .social-links a:hover {
@@ -106,8 +147,15 @@
   margin-bottom: 0.8rem;
 }
 
-.footer-links a {
+[data-theme="dark"] .footer-links a {
   color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .footer-links a {
+  color: #64748b;
+}
+
+.footer-links a {
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-block;
@@ -125,8 +173,15 @@
   color: var(--primary-color);
 }
 
-.footer-links a:hover {
+[data-theme="dark"] .footer-links a:hover {
   color: white;
+}
+
+[data-theme="light"] .footer-links a:hover {
+  color: #1e293b;
+}
+
+.footer-links a:hover {
   padding-left: 20px;
 }
 
@@ -141,13 +196,21 @@
   margin: 0;
 }
 
+[data-theme="dark"] .footer-contact li {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .footer-contact li {
+  color: #64748b;
+}
+
 .footer-contact li {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 
 .footer-contact svg {
@@ -155,14 +218,25 @@
   color: var(--primary-color);
 }
 
-.footer-contact a {
+[data-theme="dark"] .footer-contact a {
   color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .footer-contact a {
+  color: #64748b;
+}
+
+.footer-contact a {
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer-contact a:hover {
+[data-theme="dark"] .footer-contact a:hover {
   color: white;
+}
+
+[data-theme="light"] .footer-contact a:hover {
+  color: #1e293b;
 }
 
 .footer-bottom {
@@ -170,15 +244,23 @@
   padding-top: 2rem;
 }
 
+[data-theme="dark"] .footer-bottom p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="light"] .footer-bottom p {
+  color: #64748b;
+}
+
 .footer-bottom p {
-  color: rgba(255, 255, 255, 0.6);
   margin: 0.5rem 0;
   font-size: 0.9rem;
+  transition: color 0.3s ease;
 }
 
 .footer-tagline {
   font-size: 0.85rem !important;
-  color: rgba(255, 255, 255, 0.4) !important;
+  opacity: 0.7;
   font-style: italic;
 }
 
