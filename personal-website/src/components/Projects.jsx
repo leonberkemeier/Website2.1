@@ -44,36 +44,38 @@ function Projects() {
     <section id="projects" className="projects-section">
       <div className="container">
         <h2>Projects</h2>
-        <div className="projects-category">
-          <h3>IT Projects</h3>
-          <div className="projects-grid">
-            {projects.filter(p => p.category === 'IT').map((project, index) => (
-              <div key={index} className="project-box">
-                <h4>{project.title}</h4>
-                <p>{project.description}</p>
-                <div className="project-tech">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="tech-tag">{tech}</span>
-                  ))}
+        <div className="projects-categories-wrapper">
+          <div className="projects-category">
+            <h3>IT Projects</h3>
+            <div className="projects-grid">
+              {projects.filter(p => p.category === 'IT').map((project, index) => (
+                <div key={index} className="project-box">
+                  <h4>{project.title}</h4>
+                  <p>{project.description}</p>
+                  <div className="project-tech">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="tech-tag">{tech}</span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="projects-category">
-          <h3>Data Projects</h3>
-          <div className="projects-grid">
-            {projects.filter(p => p.category === 'Data').map((project, index) => (
-              <div key={index} className="project-box">
-                <h4>{project.title}</h4>
-                <p>{project.description}</p>
-                <div className="project-tech">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="tech-tag">{tech}</span>
-                  ))}
+          <div className="projects-category">
+            <h3>Data Projects</h3>
+            <div className="projects-grid">
+              {projects.filter(p => p.category === 'Data').map((project, index) => (
+                <div key={index} className="project-box">
+                  <h4>{project.title}</h4>
+                  <p>{project.description}</p>
+                  <div className="project-tech">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="tech-tag">{tech}</span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
