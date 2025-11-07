@@ -13,11 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
   
   /* Custom properties for consistent theming */
-  /* Teal & Slate palette (updated) */
-  --primary-color: #0ea5a4; /* teal */
-  --primary-dark: #0f766e; /* darker teal */
-  --secondary-color: #334155; /* slate */
-  --accent-color: #06b6d4; /* cyan accent */
+  /* Cool Indigo palette */
+  --primary-color: #4f46e5; /* indigo */
+  --primary-dark: #4338ca; /* darker indigo */
+  --secondary-color: #6366f1; /* soft indigo */
+  --accent-color: #8b5cf6; /* violet accent */
   --text-dark: #1e293b;
   --text-light: #64748b;
   --bg-light: #f8fafc;
@@ -34,13 +34,13 @@
   --dark-bg-end: #f8fafc;
   --dark-text: #1e293b;
   --dark-text-secondary: #64748b;
-  /* teal/slate background for About Me (was purple) */
-  --purple-bg-start: #e6f7f6; /* very light teal */
-  --purple-bg-end: #eef7f9; /* subtle cyan tint */
+  /* indigo background for About Me */
+  --purple-bg-start: #e0e7ff; /* very light indigo */
+  --purple-bg-end: #ddd6fe; /* soft lavender */
   --section-dark-start: #1e293b;
   --section-dark-end: #0f172a;
-  --skills-purple-start: #06b6d4; /* cyan */
-  --skills-purple-end: #0ea5a4; /* teal */
+  --skills-purple-start: #667eea; /* indigo */
+  --skills-purple-end: #764ba2; /* violet */
 }
 
 /* Dark mode theme variables */
@@ -49,13 +49,13 @@
   --dark-bg-end: #0f172a;
   --dark-text: #ffffff;
   --dark-text-secondary: rgba(255, 255, 255, 0.7);
-  /* keep darker teal-ish tones in dark mode */
-  --purple-bg-start: #274249;
-  --purple-bg-end: #183033;
+  /* indigo tones for dark mode */
+  --purple-bg-start: #667eea;
+  --purple-bg-end: #764ba2;
   --section-dark-start: #1e293b;
   --section-dark-end: #0f172a;
-  --skills-purple-start: #0f766e;
-  --skills-purple-end: #0ea5a4;
+  --skills-purple-start: #4c51bf;
+  --skills-purple-end: #7c3aed;
 }
 
 a {
