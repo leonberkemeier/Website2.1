@@ -1,4 +1,5 @@
 import './AboutMe.css'
+import { useState } from 'react'
 
 function AboutMe() {
   const interests = [
@@ -8,13 +9,27 @@ function AboutMe() {
     { icon: '🧪', text: 'Chemistry & Science' }
   ]
 
+  // Show an image from the public folder (/profile.jpg). If the image fails to load
+  // we fall back to the placeholder text. Place your image in `public/profile.jpg`
+  // or use another filename and update the src below.
+  const [imgVisible, setImgVisible] = useState(true)
+
   return (
     <section id="about" className="about-section">
       <div className="container">
         <div className="about-content">
           <div className="photo-container">
             <div className="photo-placeholder">
-              <span>Your Photo</span>
+              {imgVisible ? (
+                <img
+                  src="/profile.jpg"
+                  alt="Leon Berkemeier"
+                  className="profile-photo"
+                  onError={() => setImgVisible(false)}
+                />
+              ) : (
+                <span>Your Photo</span>
+              )}
             </div>
           </div>
           <div className="bio">
