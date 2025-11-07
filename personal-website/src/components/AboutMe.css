@@ -10,13 +10,14 @@
   left: 0;
   right: 0;
   height: 220px;
-  background: linear-gradient(180deg, transparent 0%, rgba(76, 81, 191, 0.25) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(6, 182, 212, 0.08) 100%);
   pointer-events: none;
   z-index: 1;
 }
 
 /* Light mode - light purple background with fade to next section */
 [data-theme="light"] .about-section {
+  /* teal / slate background in light mode */
   background: linear-gradient(135deg, var(--purple-bg-start) 0%, var(--purple-bg-end) 100%);
 }
 
@@ -46,8 +47,8 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(14, 165, 164, 0.06) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -143,7 +144,7 @@
 }
 
 .photo-placeholder span {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #06b6d4 0%, #0ea5a4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -161,7 +162,7 @@
 }
 
 [data-theme="light"] .bio h3 {
-  color: #1e293b;
+  color: #0f172a; /* slightly darker for contrast on white card */
 }
 
 .bio h3 {
@@ -223,14 +224,14 @@
 }
 
 [data-theme="dark"] .interest-item {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 [data-theme="light"] .interest-item {
-  background: rgba(99, 102, 241, 0.08);
-  border: 1px solid rgba(99, 102, 241, 0.15);
+  background: rgba(14,165,164,0.06);
+  border: 1px solid rgba(14,165,164,0.12);
   color: #475569;
 }
 
@@ -248,16 +249,16 @@
 }
 
 [data-theme="dark"] .interest-item:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 [data-theme="light"] .interest-item:hover {
-  background: rgba(99, 102, 241, 0.12);
+  background: rgba(14,165,164,0.12);
 }
 
 .interest-item:hover {
   transform: translateY(-1px);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px rgba(6,182,212,0.06);
 }
 
 .interest-icon {
@@ -286,14 +287,14 @@
 
 [data-theme="dark"] .btn-primary {
   background: white;
-  color: #667eea;
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+  color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.12);
 }
 
 [data-theme="light"] .btn-primary {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #06b6d4, #0ea5a4);
   color: white;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 6px 25px rgba(6,182,212,0.12);
 }
 
 .btn-primary:hover {
@@ -302,24 +303,24 @@
 
 [data-theme="dark"] .btn-primary:hover {
   background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.12);
 }
 
 [data-theme="light"] .btn-primary:hover {
-  background: linear-gradient(135deg, #5a67d8, #6b46c1);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+  background: linear-gradient(135deg, #05a0b0, #0f776a);
+  box-shadow: 0 10px 30px rgba(6,182,212,0.16);
 }
 
 [data-theme="dark"] .btn-secondary {
   background: transparent;
   color: white;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
 [data-theme="light"] .btn-secondary {
   background: transparent;
-  color: #1e293b;
-  border-color: rgba(99, 102, 241, 0.4);
+  color: #0f172a;
+  border-color: rgba(14,165,164,0.14);
 }
 
 .btn-secondary {
@@ -327,15 +328,15 @@
 }
 
 [data-theme="dark"] .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: white;
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
 [data-theme="light"] .btn-secondary:hover {
-  background: rgba(99, 102, 241, 0.1);
-  border-color: rgba(99, 102, 241, 0.6);
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  background: rgba(14,165,164,0.06);
+  border-color: rgba(14,165,164,0.28);
+  box-shadow: 0 6px 20px rgba(6,182,212,0.06);
 }
 
 .btn-secondary:hover {
@@ -352,6 +353,7 @@
   .photo-placeholder {
     width: 220px;
     height: 220px;
+    border-radius: 50%;
   }
   
   .bio h3 {
