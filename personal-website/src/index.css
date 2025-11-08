@@ -51,17 +51,22 @@
 
 /* Dark mode theme variables */
 [data-theme="dark"] {
-  --dark-bg-start: #1e293b;
-  --dark-bg-end: #0f172a;
+  --dark-bg-start: #232221;
+  --dark-bg-end: #1a1918;
   --dark-text: #ffffff;
   --dark-text-secondary: rgba(255, 255, 255, 0.7);
-  /* indigo tones for dark mode */
-  --purple-bg-start: #667eea;
-  --purple-bg-end: #764ba2;
-  --section-dark-start: #1e293b;
-  --section-dark-end: #0f172a;
-  --skills-purple-start: #4c51bf;
-  --skills-purple-end: #7c3aed;
+  /* custom dark palette: teal/cyan/red accents */
+  --purple-bg-start: #47b69f; /* teal */
+  --purple-bg-end: #0094cd; /* blue */
+  --section-dark-start: #232221;
+  --section-dark-end: #1a1918;
+  --skills-purple-start: #47b69f; /* teal */
+  --skills-purple-end: #0094cd; /* blue */
+  /* custom accent for dark mode */
+  --accent-dark-1: #232221; /* dark charcoal */
+  --accent-dark-2: #47b69f; /* teal */
+  --accent-dark-3: #ff464b; /* red */
+  --accent-dark-4: #0094cd; /* blue */
 }
 
 a {
