@@ -18,6 +18,12 @@
   --primary-dark: #4338ca; /* darker indigo */
   --secondary-color: #6366f1; /* soft indigo */
   --accent-color: #8b5cf6; /* violet accent */
+  /* Custom accent palette provided by user */
+  --accent-1: #232b3f; /* dark slate */
+  --accent-2: #f6f5f4; /* off-white */
+  --accent-3: #ea3a38; /* red accent */
+  --accent-4: #813d9c; /* purple accent */
+  --accent-gradient: linear-gradient(90deg, var(--accent-1) 0%, var(--accent-4) 33%, var(--accent-3) 66%, var(--accent-2) 100%);
   --text-dark: #1e293b;
   --text-light: #64748b;
   --bg-light: #f8fafc;

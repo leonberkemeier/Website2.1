@@ -1,0 +1,11 @@
+light:
+#f6f5f4
+#233d2e
+#fa0b22
+#53bdbe
+
+dark:
+#232221
+#47b69f
+#ff464b
+#0094cd
