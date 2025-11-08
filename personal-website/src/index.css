@@ -37,16 +37,21 @@
 /* Light mode theme variables */
 [data-theme="light"] {
   --dark-bg-start: #ffffff;
-  --dark-bg-end: #f8fafc;
-  --dark-text: #1e293b;
+  --dark-bg-end: #f6f5f4;
+  --dark-text: #0a3c56;
   --dark-text-secondary: #64748b;
-  /* indigo background for About Me */
-  --purple-bg-start: #e0e7ff; /* very light indigo */
-  --purple-bg-end: #ddd6fe; /* soft lavender */
-  --section-dark-start: #1e293b;
-  --section-dark-end: #0f172a;
-  --skills-purple-start: #667eea; /* indigo */
-  --skills-purple-end: #764ba2; /* violet */
+  /* custom light palette: purple/blue accents */
+  --purple-bg-start: #f6f5f4; /* off-white */
+  --purple-bg-end: #e8e6f3; /* subtle purple tint */
+  --section-dark-start: #0a3c56;
+  --section-dark-end: #082e42;
+  --skills-purple-start: #9141ac; /* purple */
+  --skills-purple-end: #0a3c56; /* dark blue */
+  /* custom accent for light mode */
+  --accent-light-1: #0a3c56; /* dark blue */
+  --accent-light-2: #f6f5f4; /* off-white */
+  --accent-light-3: #9141ac; /* purple */
+  --accent-light-4: #6b2d8a; /* darker purple */
 }
 
 /* Dark mode theme variables */
