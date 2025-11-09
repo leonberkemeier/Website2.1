@@ -10,7 +10,7 @@
   left: 0;
   right: 0;
   height: 220px;
-  background: linear-gradient(180deg, transparent 0%, rgba(71, 182, 159, 0.08) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(62, 52, 66, 0.6) 100%);
   pointer-events: none;
   z-index: 1;
 }

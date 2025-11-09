@@ -16,6 +16,19 @@
   transition: background 0.3s ease;
 }
 
+/* Dark mode top gradient fade */
+[data-theme="dark"] .projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  background: linear-gradient(180deg, rgba(62, 52, 66, 0.6) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .projects-section::before {
   content: '';
   position: absolute;

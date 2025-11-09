@@ -5,7 +5,7 @@
 
 /* Dark mode - dark purple background */
 [data-theme="dark"] .cv-section {
-  background: linear-gradient(180deg, var(--skills-purple-start) 0%, var(--skills-purple-end) 100%);
+  background: #3e3442;
 }
 
 .cv-section {
