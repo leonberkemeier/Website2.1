@@ -42,6 +42,31 @@
   pointer-events: none;
 }
 
+/* Dark mode bottom fade to CV (bordeaux) and light mode gentle fade to off-white */
+[data-theme="dark"] .projects-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  background: linear-gradient(180deg, transparent 0%, rgba(62, 52, 66, 0.6) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+[data-theme="light"] .projects-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(180deg, transparent 0%, #f6f5f4 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .projects-section .container {
   position: relative;
   z-index: 1;
