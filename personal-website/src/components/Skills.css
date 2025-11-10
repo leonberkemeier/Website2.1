@@ -1,6 +1,7 @@
 /* Light mode - light background */
 [data-theme="light"] .skills-section {
-  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+  /* use the same off-white the About Me section fades into */
+  background: var(--accent-2, #f6f5f4);
 }
 
 /* Dark mode - dark purple background */

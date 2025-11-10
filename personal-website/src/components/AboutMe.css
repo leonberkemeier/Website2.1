@@ -17,8 +17,8 @@
 
 /* Light mode - light background with fade to next section */
 [data-theme="light"] .about-section {
-  /* off-white background in light mode */
-  background: #f6f5f4;
+  /* faint purple at the top fading to the schema's main white/off-white */
+  background: linear-gradient(180deg, rgba(129, 61, 156, 0.18) 0%, var(--accent-2, #f6f5f4) 100%);
 }
 
 [data-theme="light"] .about-section::after {
