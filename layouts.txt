@@ -4,6 +4,11 @@ light:
 #fa0b22
 #53bdbe
 
+light2:
+#0a3c56
+#f6f5f4
+#9141ac
+
 dark:
 #232221
 #47b69f
