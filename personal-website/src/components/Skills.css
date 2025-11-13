@@ -1,7 +1,7 @@
 /* Light mode - light background */
 [data-theme="light"] .skills-section {
-  /* use the same off-white the About Me section fades into */
-  background: var(--accent-2, #f6f5f4);
+  /* Smooth gradient background connecting to about section */
+  background: linear-gradient(180deg, #eef2ff 0%, #f0f4f8 50%, #f8fafc 100%);
 }
 
 /* Dark mode - dark purple background */
@@ -23,10 +23,16 @@
   z-index: 0;
 }
 
-.skills-section {
-  position: relative;
-  overflow: hidden;
-  transition: background 0.3s ease;
+[data-theme="light"] .skills-section::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(180deg, rgba(79, 70, 229, 0.08) 0%, rgba(79, 70, 229, 0.02) 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .skills-section::before {
@@ -38,6 +44,19 @@
   height: 100px;
   background: linear-gradient(180deg, rgba(118, 75, 162, 0.05) 0%, transparent 100%);
   pointer-events: none;
+}
+
+/* Light mode bottom gradient fade to projects */
+[data-theme="light"] .skills-section::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(180deg, transparent 0%, rgba(79, 70, 229, 0.04) 100%);
+  pointer-events: none;
+  z-index: 2;
 }
 
 /* Dark mode bottom gradient + radial accents */

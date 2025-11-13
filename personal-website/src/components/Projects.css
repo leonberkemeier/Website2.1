@@ -1,6 +1,6 @@
 /* Light mode - purple background */
 [data-theme="light"] .projects-section {
-  background: linear-gradient(135deg, var(--purple-bg-start) 0%, var(--purple-bg-end) 100%);
+  background: linear-gradient(180deg, #f5f3ff 0%, #f0f4f8 50%, #f8fafc 100%);
 }
 
 /* Dark mode - dark background */
@@ -27,6 +27,18 @@
   background: linear-gradient(180deg, rgba(62, 52, 66, 0.6) 0%, transparent 100%);
   pointer-events: none;
   z-index: 1;
+}
+
+[data-theme="light"] .projects-section::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(180deg, rgba(79, 70, 229, 0.06) 0%, rgba(79, 70, 229, 0.01) 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .projects-section::before {

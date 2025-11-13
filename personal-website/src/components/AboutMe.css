@@ -17,25 +17,26 @@
 
 /* Light mode - light background with fade to next section */
 [data-theme="light"] .about-section {
-  /* faint purple at the top fading to the schema's main white/off-white */
-  background: linear-gradient(180deg, rgba(129, 61, 156, 0.18) 0%, var(--accent-2, #f6f5f4) 100%);
+  /* Gradient transitioning smoothly to skills section */
+  background: linear-gradient(180deg, #ffffff 0%, #f5f3ff 50%, #eef2ff 100%);
 }
 
 [data-theme="light"] .about-section::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   right: 0;
-  height: 0px;
-  background: transparent;
+  height: 120px;
+  background: linear-gradient(180deg, transparent 0%, rgba(79, 70, 229, 0.05) 100%);
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .about-section {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   transition: background 0.3s ease;
 }
 

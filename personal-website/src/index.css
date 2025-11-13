@@ -36,22 +36,33 @@
 
 /* Light mode theme variables */
 [data-theme="light"] {
-  --dark-bg-start: #ffffff;
-  --dark-bg-end: #f6f5f4;
-  --dark-text: #0a3c56;
-  --dark-text-secondary: #64748b;
-  /* custom light palette: purple/blue accents */
-  --purple-bg-start: #f6f5f4; /* off-white */
-  --purple-bg-end: #e8e6f3; /* subtle purple tint */
-  --section-dark-start: #0a3c56;
-  --section-dark-end: #082e42;
-  --skills-purple-start: #9141ac; /* purple */
-  --skills-purple-end: #0a3c56; /* dark blue */
-  /* custom accent for light mode */
-  --accent-light-1: #0a3c56; /* dark blue */
-  --accent-light-2: #f6f5f4; /* off-white */
-  --accent-light-3: #9141ac; /* purple */
-  --accent-light-4: #6b2d8a; /* darker purple */
+  /* Background colors */
+  --dark-bg-start: #ffffff; /* clean white */
+  --dark-bg-end: #f0f4f8; /* soft blue-gray */
+  --dark-text: #1e293b; /* dark slate */
+  --dark-text-secondary: #64748b; /* muted slate */
+  
+  /* Primary gradient palette - Modern blue-indigo */
+  --purple-bg-start: #f0f4f8; /* light blue-gray */
+  --purple-bg-end: #e0e7ff; /* light indigo */
+  
+  /* Section accents - Elegant purple & blue */
+  --section-dark-start: #4f46e5; /* vibrant indigo */
+  --section-dark-end: #7c3aed; /* purple */
+  --skills-purple-start: #06b6d4; /* cyan */
+  --skills-purple-end: #4f46e5; /* indigo */
+  
+  /* Custom light mode palette */
+  --accent-light-1: #1e293b; /* charcoal */
+  --accent-light-2: #ffffff; /* pure white */
+  --accent-light-3: #ec4899; /* pink accent */
+  --accent-light-4: #4f46e5; /* indigo accent */
+  
+  /* Neutral colors for light mode */
+  --neutral-100: #f8fafc;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
 }
 
 /* Dark mode theme variables */
