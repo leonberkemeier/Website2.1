@@ -15,23 +15,13 @@
   z-index: 1;
 }
 
-/* Light mode - light background with fade to next section */
+/* Light mode - clean white background */
 [data-theme="light"] .about-section {
-  /* Gradient transitioning smoothly to skills section */
-  background: linear-gradient(180deg, #ffffff 0%, #f5f3ff 50%, #eef2ff 100%);
+  background: #ffffff;
 }
 
 [data-theme="light"] .about-section::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 120px;
-  background: linear-gradient(180deg, transparent 0%, rgba(79, 70, 229, 0.05) 100%);
-  pointer-events: none;
-  z-index: 2;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  display: none;
 }
 
 .about-section {
