@@ -3,34 +3,28 @@ import './Skills.css'
 function Skills() {
   const skillsData = {
     frontend: [
-      { name: 'React', level: 95 },
-      { name: 'Vue.js', level: 85 },
-      { name: 'HTML5', level: 98 },
-      { name: 'CSS3', level: 95 },
-      { name: 'JavaScript (ES6+)', level: 92 },
-      { name: 'TypeScript', level: 88 },
-      { name: 'Tailwind CSS', level: 90 },
-      { name: 'Bootstrap', level: 85 }
+      { name: 'React', level: 82 },
+      { name: 'HTML5', level: 85 },
+      { name: 'CSS3', level: 80 },
+      { name: 'JavaScript (ES6+)', level: 83 },
+      { name: 'Tailwind CSS', level: 45 },
+      { name: 'Bootstrap', level: 50 }
     ],
     languages: [
-      { name: 'JavaScript', level: 92 },
-      { name: 'TypeScript', level: 88 },
-      { name: 'Python', level: 90 },
-      { name: 'Java', level: 82 },
-      { name: 'SQL', level: 87 },
-      { name: 'C++', level: 75 },
-      { name: 'Go', level: 70 },
-      { name: 'PHP', level: 80 }
+      { name: 'JavaScript', level: 83 },
+      { name: 'Python', level: 80 },
+      { name: 'Java', level: 78 },
+      { name: 'SQL', level: 82 },
+      { name: 'Go', level: 50 },
+      { name: 'C++', level: 45 }
     ],
     backend: [
-      { name: 'Node.js', level: 93 },
-      { name: 'Express', level: 90 },
-      { name: 'Django', level: 85 },
-      { name: 'Flask', level: 82 },
-      { name: 'PostgreSQL', level: 88 },
-      { name: 'MongoDB', level: 90 },
-      { name: 'Redis', level: 80 },
-      { name: 'REST APIs', level: 95 }
+      { name: 'Flask', level: 78 },
+      { name: 'Django', level: 75 },
+      { name: 'PostgreSQL', level: 80 },
+      { name: 'Docker', level: 62 },
+      { name: 'REST APIs', level: 85 },
+      { name: 'Git & GitHub', level: 82 }
     ]
   }
 

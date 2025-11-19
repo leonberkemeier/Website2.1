@@ -4,38 +4,31 @@ function CV() {
   const timeline = [
     {
       type: 'work',
-      date: '2022 - Present',
-      title: 'Senior Full Stack Developer',
-      organization: 'Tech Solutions Inc.',
-      description: 'Lead development of enterprise web applications. Mentor junior developers and architect scalable solutions.'
-    },
-    {
-      type: 'work',
-      date: '2020 - 2022',
-      title: 'Full Stack Developer',
-      organization: 'Digital Innovations Ltd.',
-      description: 'Developed and maintained multiple client projects using React, Node.js, and cloud services.'
+      date: 'Present',
+      title: 'Dual Study Program - Business IT',
+      organization: 'BASF',
+      description: 'Combining academic studies with practical work experience in business information technology at one of the world\'s leading chemical companies.'
     },
     {
       type: 'education',
-      date: '2016 - 2020',
-      title: 'Bachelor of Science in Computer Science',
-      organization: 'University of Technology',
-      description: 'Graduated with honors. Focus on software engineering, data structures, and algorithms.'
-    },
-    {
-      type: 'work',
-      date: '2019 - 2020',
-      title: 'Junior Developer Intern',
-      organization: 'StartUp Hub',
-      description: 'Assisted in building web applications and mobile apps. Gained experience in agile development.'
+      date: '2 Semesters',
+      title: 'Chemical Engineering',
+      organization: 'FH of Münster',
+      description: 'Completed two semesters of chemical engineering studies, gaining knowledge in process engineering and technical principles.'
     },
     {
       type: 'education',
-      date: '2018',
-      title: 'Data Science Certificate',
-      organization: 'Online Learning Platform',
-      description: 'Completed intensive course covering machine learning, data analysis, and statistical modeling.'
+      date: 'Completed',
+      title: 'Bachelor of Science in Chemistry',
+      organization: 'University of Münster',
+      description: 'Graduated with a degree in Chemistry, developing strong analytical and scientific research skills.'
+    },
+    {
+      type: 'education',
+      date: 'Graduated',
+      title: 'High School Graduation',
+      organization: 'High School',
+      description: 'Completed secondary education and earned high school diploma.'
     }
   ]
 
